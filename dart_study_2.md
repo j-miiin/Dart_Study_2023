@@ -57,7 +57,11 @@ void main() {
   void main() {
     var name = "감자";
     var greeting = "Hello everyone, My name is $name, nice to meet you!";
+    print(greeting);
   }
+  ```
+  ```
+  Hello everyone, My name is 감자, nice to meet you!
   ```
 - 계산을 실행할 때의 문법
   ```dart
@@ -65,5 +69,78 @@ void main() {
     var name = "감자";
     var age = 100;
     var greeting = "Hello everyone, My name is $name, and I'm ${age + 2}";
+    print(greeting);
   }
   ```
+  ```
+  Hello everyone, My name is 감자, and I'm 102
+  ```
+  </br>
+
+  ## Collection For
+```dart
+void main() {
+  var oldFriends = ["감자", "고구마"];
+  var newFriends = [
+    "딸기",
+    "수박",
+    "토마토",
+    for (var friend in oldFriends) "♥ $friend",
+  ];
+  print(newFriends);
+}
+```
+```
+[딸기, 수박, 토마토, ♥ 감자, ♥ 고구마]
+```
+</br>
+
+## Maps
+```dart
+void main() {
+  var player = {
+    'name': '감자',
+    'xp': 19.99,
+    'superpower': false,
+  };
+  // Type: Map<String, Object>
+  
+  Map<int, bool> player2 = {
+    1: true,
+    2: false,
+    3: true
+  };
+}
+```
+- 복잡한 key도 가능
+  ```dart
+  void main() {
+    Map<List<int>, bool> player = {
+      [1, 2, 3, 4, 5]: true,
+    };
+  }
+  ```
+- API 구조의 데이터라면 Map을 많이 사용하는 것보다 class를 사용하는 것을 추천
+</br>
+
+## Sets
+```dart
+void main() {
+  var numbers = {1, 2, 3, 4, 5};
+  Set<int> numbers2 = {1, 2, 3, 4, 5};
+}
+```
+- List와의 차이 : Set에 속한 아이템은 모두 유니크함
+  ```dart
+  void main() {
+    Set<int> numbers = {1, 2, 3, 4, 5};
+    numbers.add(1);
+    numbers.add(1);
+    numbers.add(1);
+    print(numbers);
+  }
+  ```
+  ```
+  {1, 2, 3, 4}
+  ```
+- Set은 __순서가 있음__

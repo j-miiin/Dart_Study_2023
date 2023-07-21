@@ -35,7 +35,8 @@ void main() {
   }
   ```
 - collection if와 collection for를 지원
-- __collection if__ : 존재할 수도, 하지 않을 수도 있는 요소를 가지고 리스트를 만들 수 있음
+  ### Collection if
+- 존재할 수도, 하지 않을 수도 있는 요소를 가지고 리스트를 만들 수 있음
   ```dart
   void main() {
     var giveMeFive = true;
@@ -77,7 +78,7 @@ void main() {
   ```
   </br>
 
-  ## Collection For
+## Collection For
 ```dart
 void main() {
   var oldFriends = ["감자", "고구마"];

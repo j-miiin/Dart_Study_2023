@@ -18,19 +18,19 @@ void main() {
 ## Lists
 ```dart
 void main() {
-	List<int> numbers = [1, 2, 3, 4];
-	// var numbers = [1, 2, 3, 4];
+  List<int> numbers = [1, 2, 3, 4];
+  // var numbers = [1, 2, 3, 4];
   numbers.add(1);
 }
 ```
 - 리스트는 ","로 마칠 것 -> 자동 포매팅
   ```dart
   void main() {
-  	var numbers = [
-    		1,
-        2,
-        3,
-        4,
+    var numbers = [
+      1,
+      2,
+      3,
+      4,
     ];
   }
   ```
@@ -38,9 +38,9 @@ void main() {
 - __collection if__ : 존재할 수도, 하지 않을 수도 있는 요소를 가지고 리스트를 만들 수 있음
   ```dart
   void main() {
-  	var giveMeFive = true;
+    var giveMeFive = true;
     var numbers = [
-    	1,
+      1,
       2,
       3,
       4,
@@ -62,7 +62,7 @@ void main() {
 - 계산을 실행할 때의 문법
   ```dart
   void main() {
-  	var name = "감자";
+    var name = "감자";
     var age = 100;
     var greeting = "Hello everyone, My name is $name, and I'm ${age + 2}";
   }
